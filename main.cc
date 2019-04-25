@@ -8,12 +8,10 @@
 using namespace std;
 
 int main(int argc, char* argv[]){
-  // open file
   fstream file;
   string filename = argv[1];
-  file.open(filename.c_str());
-
   while(true){
+    file.open(filename.c_str());
     // get pokemon and convert to lowercase
     cout << "Enter Pokemon: ";
     string pokemon;
@@ -110,6 +108,7 @@ int main(int argc, char* argv[]){
         cout << "================================================================================" << endl;
       }
     }
+    file.close();
   }
   return 0;
 }
