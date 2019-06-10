@@ -7,6 +7,11 @@ unordered_map<string, double> get_weaknesses(string type1, string type2){
   if(type1 == "NORMAL"){
     map.insert(make_pair("FIGHTING", 2));
   }
+  else if(type1 == "FIRE"){
+    map.insert(make_pair("GROUND", 2));
+    map.insert(make_pair("ROCK", 2));
+    map.insert(make_pair("WATER", 2));
+  }
   else if(type1 == "FIGHTING"){
     map.insert(make_pair("FLYING", 2));
   }
