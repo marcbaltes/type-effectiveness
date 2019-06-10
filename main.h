@@ -1060,23 +1060,23 @@ unordered_map<string, double> get_immunities(string type1, string type2){
   if(type1 == "NORMAL" || type2 == "NORMAL"){
     map.insert(make_pair("GHOST", 0));
   }
-  else if(type1 == "GHOST" || type2 == "GHOST"){
+  if(type1 == "GHOST" || type2 == "GHOST"){
     map.insert(make_pair("NORMAL", 0));
     map.insert(make_pair("FIGHTING", 0));
   }
-  else if(type1 == "FLYING" || type2 == "FLYING"){
+  if(type1 == "FLYING" || type2 == "FLYING"){
     map.insert(make_pair("GROUND", 0));
   }
-  else if(type1 == "GROUND" || type2 == "GROUND"){
+  if(type1 == "GROUND" || type2 == "GROUND"){
     map.insert(make_pair("ELECTRIC", 0));
   }
-  else if(type1 == "STEEL" || type2 == "STEEL"){
+  if(type1 == "STEEL" || type2 == "STEEL"){
     map.insert(make_pair("POISON", 0));
   }
-  else if(type1 == "DARK" || type2 == "DARK"){
+  if(type1 == "DARK" || type2 == "DARK"){
     map.insert(make_pair("PSYCHIC", 0));
   }
-  else if(type1 == "FAIRY" || type2 == "FAIRY"){
+  if(type1 == "FAIRY" || type2 == "FAIRY"){
     map.insert(make_pair("DRAGON", 0));
   }
   return map;
