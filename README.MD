@@ -1,5 +1,5 @@
 # Pokemon Type Effectiveness Display
-The Pokemon.csv file contains all pokemon from gen 1 to 7. In that file the name, types, and stats of all pokemon are shown there. This program parses that file and displays the weaknesses and resistances of the pokemon that you choose.
+The Pokemon.csv file contains all pokemon from gen 1 to 7. In that file the name, types, and stats of all pokemon are shown there (for gens 1 - 6. Gen 7 only has the name and types). This program parses that file and displays the weaknesses and resistances of the pokemon that you choose.
 
 ### Compiling
 In terminal, type: ```g++ main.cc``` followed by ```./a.out Pokemon.csv``` to run the program
